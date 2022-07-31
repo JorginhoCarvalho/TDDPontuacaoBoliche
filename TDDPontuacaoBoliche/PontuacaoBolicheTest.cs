@@ -1,7 +1,7 @@
 using Xunit;
 namespace TDDBoliche
 {
-    public class UnitTest1
+    public class PontuacaoBolicheTest
     {
         [Theory]
         [MemberData(nameof(Rodadas))]
