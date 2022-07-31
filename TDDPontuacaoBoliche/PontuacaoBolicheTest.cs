@@ -5,19 +5,19 @@ namespace TDDBoliche
     {
         [Theory]
         [MemberData(nameof(Rodadas))]
-        public void RodadasComTodosValoresZeros(string[][] rodadasBoliche)
+        public void RodadasComTodosValoresZeros(string[] rodadasBoliche)
         {
             Assert.Equal(0, PontuacaoTotal(rodadasBoliche));
         }
 
-        public static IEnumerable<string[][]> Rodadas()
+        public static IEnumerable<object[]> Rodadas()
         {
-            yield return new string[][] { new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" }, new[] { "0 0" } };
+            yield return new object[] { new string[] { "0 0", "0 0", "0 0", "0 0", "0 0", "0 0", "0 0", "0 0", "0 0", "0 0" } };
         }
 
-        int PontuacaoTotal(string[][] rodadas)
+        int PontuacaoTotal(string[] rodadas)
         {
-            throw new NotImplementedException();
+            return 0;
         }
     }
 }
